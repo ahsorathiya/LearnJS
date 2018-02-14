@@ -1,0 +1,60 @@
+<!--
+    
+
+Filename: e:\LearnJS\index.html
+Path: e:\LearnJS
+Created Date: Wednesday, February 14th 2018, 12:37:25 pm
+Author: AliHusain Sorathiya
+
+Copyright (c) 2018 Your Company
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <script>
+                function print(){
+                    console.log("Hello "+arguments[0]); 
+                    var person = {
+                        id:1,
+                        name:"ALI HUSSAIN"
+                    }
+                    document.write(person.id + " " + person.name + " ");
+                }
+                function add(a,b){
+                    
+                    var c= a+b;
+                    console.log("The addition of two numbers is "+c);
+                }
+                function multiply(a,b){
+                    
+                    var c=a*b;
+                    console.log("The multiplication of two numbers is  " +c);
+                }
+
+                function substract(a,b){
+                    
+                    var c=a-b;
+                    console.log("The substraction of two numbers is  " +c);
+                    
+                   
+                }
+
+                function divide (a,b) {
+                    var c = a/b;
+                    console.log("The Division of two numbers is  " +c);
+                }
+        </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+</head>
+<body>
+    <button id="btn1" style="color:blue"  value="print" onclick="print('AliHusain')" >print</button>
+    <button id="btn2" style="color:blueviolet"  onclick="add(2,4)"> add </button>
+    <button id="btn3" style="color:chocolate"  onclick="multiply(2,4)"> multiply</button>
+    <button id="btn4" style="color:crimson"  onclick="substract(2,4)"> substract</button>
+    <button id="btn5" style="color:purple" onclick="divide(8,4)"> Divide </button>
+</body>
+</html>
